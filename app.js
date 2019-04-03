@@ -6,6 +6,8 @@ const path = require("path");
 
 const app = express();
 
+const project = require("./routes/project");
+
 console.log(__dirname);
 //view engine setup
 app.engine("handlebars", exphbs());
@@ -25,6 +27,8 @@ app.use("/", (req, res, next) => {
   // console.log("lskdjfsj");
 });
 
+app.use("/project", project);
+
 app.get("/", function(req, res) {
   res.render("index");
   console.log("first" + req.url);
@@ -33,9 +37,9 @@ app.get("/", function(req, res) {
 app.get("/about", function(req, res) {
   res.render("about");
 });
-app.get("/project", function(req, res) {
-  res.render("project");
-});
+// app.get("/project", function(req, res) {
+//   res.render("project");
+// });
 app.get("/services", function(req, res) {
   res.render("services");
 });
