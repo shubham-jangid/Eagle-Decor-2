@@ -1,14 +1,12 @@
 const express = require("express");
-const Post = require("../../models/post");
 
 const router = express.Router();
 
-router.all("/*", (req, res, next) => {
-  req.app.locals.layout = "projects";
-  next();
+router.get("/", function(req, res) {
+  res.render("project");
 });
 
-router.get("/", (req, res) => {
+router.get("/heritage-city", (req, res) => {
   res.render("projects/heritage-city");
 });
 
