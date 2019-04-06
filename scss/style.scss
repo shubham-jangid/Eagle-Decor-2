@@ -89,6 +89,11 @@ h5,
     @include media-breakpoint-up(md) {
       color: $white;
     }
+    img {
+      @include media-breakpoint-down(md) {
+        width: 60px;
+      }
+    }
     &.navbar-brand-black {
       @include media-breakpoint-up(md) {
         color: $black;
