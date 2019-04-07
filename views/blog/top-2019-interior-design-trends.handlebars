@@ -103,32 +103,45 @@
 
                         <!-- END comment-list -->
 
+
                         <div class="comment-form-wrap pt-5">
-                            <h3 class="mb-5">Leave a comment</h3>
-                            <form action="#" class="p-5 bg-light">
+                            {{msg}}
+                            <h3 class="mb-5">Contact Us</h3>
+                            <form action="/" data-netlify="true" method="post" class="p-5 bg-light">
                                 <div class="form-group">
                                     <label for="name">Name *</label>
-                                    <input type="text" class="form-control" id="name">
+                                    <input type="text" class="form-control" required="required" id="name">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email *</label>
-                                    <input type="email" class="form-control" id="email">
+                                    <input type="email" class="form-control" required="required" id="email">
                                 </div>
                                 <div class="form-group">
-                                    <label for="website">Website</label>
-                                    <input type="url" class="form-control" id="website">
+                                    <label for="website">Phone</label>
+                                    <input type="number" class="form-control">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="message">Message</label>
-                                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                                    <textarea name="" id="message" cols="30" rows="10" class="form-control" value="message" required="required"></textarea>
                                 </div>
+
+                                <input type="hidden" name="url" id="url">
+
+                                <script>
+                                    var urlPath = window.location.pathname;
+                                    var input = document.getElementById("url");
+                                    input.value = urlPath;
+                                </script>
+
                                 <div class="form-group">
-                                    <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+                                    <input type="submit" class="btn py-3 px-4 btn-primary">
                                 </div>
 
                             </form>
                         </div>
+
+
                     </div>
 
                 </div>
