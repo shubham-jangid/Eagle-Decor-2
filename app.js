@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // using the route middleware
-app.use("/project", project);
+app.use("/projects", project);
 app.use("/blog", blog);
 app.use("/contact", contact);
 

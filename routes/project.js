@@ -3,18 +3,17 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", function(req, res) {
-  res.render("project");
+  res.render("projects");
 });
 
-router.use("/heritage-city", (req, res, next) => {
-  next();
+// router.use("/heritage-city", (req, res, next) => {
+//   next();
 
-  console.log(req.url);
-});
+//   console.log(req.url);
+// });
 
-router.get("/heritage-city", (req, res) => {
-  console.log("first" + req.url);
-  res.render("projects/heritage-city");
+router.get("/residence-villa-greater-kailash", (req, res) => {
+  res.render("projects/residence-villa-greater-kailash");
 });
 
 module.exports = router;
