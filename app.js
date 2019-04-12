@@ -10,7 +10,7 @@ const app = express();
 const project = require("./routes/project");
 const blog = require("./routes/blog");
 const contact = require("./routes/contact");
-
+const services = require("./routes/services");
 //view engine setup
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
@@ -26,6 +26,7 @@ app.use(bodyParser.json());
 app.use("/projects", project);
 app.use("/blog", blog);
 app.use("/contact", contact);
+app.use("/services", services);
 
 app.get("/", function(req, res) {
   res.render("index");
