@@ -13,10 +13,14 @@
   "author": "shubham jangid",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.5.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-css": "^0.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.5.3",
     "nodemailer": "^5.0.0"
   },
   "dependencies": {
