@@ -54,4 +54,38 @@ router.get("/residence-palm-hill-sector-89-gurugram", (req, res) => {
   res.render("projects/residence-palm-hill-sector-89-gurugram");
 });
 
+// added after 8-8-19
+
+router.get("/heritage-city-gurgaon", (req, res) => {
+  res.render("projects/heritage-city-gurgaon");
+});
+
+// router.get("/kochar-jewellery-showroom-karol-bagh", (req, res) => {
+//   res.render("projects/kochar-jewellery-showroom-karol-bagh");
+// });
+
+router.get("/kirti-nagar", (req, res) => {
+  res.render("projects/kirti-nagar");
+});
+
+router.get("/residence-dadri-haryana", (req, res) => {
+  res.render("projects/residence-dadri-haryana");
+});
+
+router.get("/cedar-crest-nirvana-country-gurgaon", (req, res) => {
+  res.render("projects/cedar-crest-nirvana-country-gurgaon");
+});
+
+router.get("/cafe-noida", (req, res) => {
+  res.render("projects/cafe-noida");
+});
+
+router.get("/ashok-gupta-patel-nagar-delhi", (req, res) => {
+  res.render("projects/ashok-gupta-patel-nagar-delhi");
+});
+
+router.get("/u7-gym", (req, res) => {
+  res.render("projects/u7-gym");
+});
+
 module.exports = router;

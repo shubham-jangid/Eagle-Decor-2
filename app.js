@@ -164,5 +164,5 @@ app.post("/contact", (req, res) => {
 });
 
 app.listen(8080, () => {
-  console.log("8080");
+  console.log("on port 8080");
 });
