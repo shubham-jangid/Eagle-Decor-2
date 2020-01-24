@@ -18,6 +18,8 @@ app.set("view engine", "handlebars");
 //static folder
 app.use("/public", express.static(path.join(__dirname, "public")));
 
+app.locals.layout = false;
+
 //body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -163,6 +165,6 @@ app.post("/contact", (req, res) => {
   });
 });
 
-app.listen(80, () => {
-  console.log("on port 80");
+app.listen(8080, () => {
+  console.log("on port 8080");
 });
